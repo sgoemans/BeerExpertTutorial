@@ -1,0 +1,25 @@
+{
+  "name": "Beer-Expert",
+  "version": "0.0.1",
+  "main": "index.html",
+  "author": "Stephan Goemans <stephan.goemans@gmail.com>",
+  "description": "A sample HTML5 / CSS creation workflow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgoemans/BeerExpertTutorial.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-usemin": "~0.3.8",
+    "gulp-minify-html": "~0.1.7",
+    "gulp-minify-css": "~0.3.11",
+    "gulp-concat": "~2.4.2",
+    "gulp-uglify": "~1.0.1",
+    "gulp-sass": "~1.1.0"
+  }
+}

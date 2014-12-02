@@ -1,0 +1,32 @@
+{
+  "name": "BeerExpertTutorial",
+  "version": "0.0.3",
+  "authors": [
+    "Stephan.Goemans <Stephan.Goemans@gmail.com>"
+  ],
+  "description": "Beer Expert Tutorial Bower Extensions",
+  "main": "index.html",
+  "keywords": [
+    "Tutorial",
+    "backbone",
+    "localstorage",
+    "jasmine"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "backbone": "*",
+    "backbone.localStorage": "*",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "jasmine": "*",
+    "jasmine2-junit": "*"
+  }
+}

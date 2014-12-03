@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beer Expert</title>
     <!-- build:css style.css -->
-    <link href="scss/beer-styles.css" rel="stylesheet" />
+    <link href="scss/beer-styles.css" rel="stylesheet"/>
     <!-- endbuild -->
+    <!-- Distribution libraries -->
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/backbone/backbone.js"></script>
+    <!-- Application modules -->
+    <script type="text/template" id="beerItemTemplate">
+        <div class="beer-cell">
+            <div class="cell-header">
+                <%=title%>
+            </div>
+            <div class="desc">
+                <%=text%>
+            </div>
+            <p>
+                <img src="./img/<%=pic%>">
+            </p>
+        </div>
+    </script>
 </head>
 <body>
 <nav id="top-nav"></nav>
@@ -14,34 +32,23 @@
     <img src="./img/banner.png" class="banner">
 </header>
 <main>
+    <div id="beer-test"></div>
     <section class="beer-table">
         <div class="beer-row">
-            <div class="beer-cell-left"></div>
-            <div class="cell-header">
-                British Stout
-            </div>
-            <div class="desc">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua.
-            </div>
-            <p>
-                <img src="./img/beer1.jpg">
-            </p>
-
-            <div class="beer-cell-middle">
+            <div class="beer-cell">
                 <div class="cell-header">
-                    Pale Ale
+                    British Stout
                 </div>
                 <div class="desc">
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.
                 </div>
                 <p>
-                    <img src="./img/beer2.jpg">
+                    <img src="./img/beer1.jpg">
                 </p>
             </div>
 
-            <div class="beer-cell-right">
+            <div class="beer-cell">
                 <div class="cell-header">
                     Dead Man's Ale
                 </div>
@@ -55,21 +62,21 @@
             </div>
         </div>
         <div class="beer-row">
-            <div class="beer-cell-left"></div>
-            <div class="cell-header">
-                Monster Brew
-            </div>
-            <div class="desc">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam voluptua.
-            </div>
-            <p>
-                <img src="./img/beer4.jpg">
-            </p>
-
-            <div class="beer-cell-middle">
+            <div class="beer-cell">
                 <div class="cell-header">
-                   Slacker's Delight
+                    Monster Brew
+                </div>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.
+                </div>
+                <p>
+                    <img src="./img/beer4.jpg">
+                </p>
+            </div>
+            <div class="beer-cell">
+                <div class="cell-header">
+                    Slacker's Delight
                 </div>
                 <div class="desc">
                     At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
@@ -80,7 +87,7 @@
                 </p>
             </div>
 
-            <div class="beer-cell-right">
+            <div class="beer-cell">
                 <div class="cell-header">
                     Goose Punks
                 </div>
@@ -96,5 +103,10 @@
     </section>
 </main>
 <footer>&copyCopyright 2014, Stephan Goemans</footer>
+<script src="../src/js/namespace.js"></script>
+<script src="../src/js/model/BeerExpertModel.js"></script>
+<script src="../src/js/collection/BeerExpertCollection.js"></script>
+<script src="../src/js/view/BeerExpertItemview.js"></script>
+<script src="../src/js/app.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
-/**
- * Created by Goemans.Stephan on 03.12.2014.
- */
+App.Collections.BeerExpertCollection = Backbone.Collection.extend({
+	model: App.Models.BeerExpertModel
+});
+

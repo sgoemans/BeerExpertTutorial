@@ -1,5 +1,6 @@
 App.Views.BeerExpertItemview = Backbone.View.extend({
-	el: "#beer-test",
+	tagName: 'div',
+	className: 'beer-cell',
 	template: _.template($('#beerItemTemplate').html()),
 	render: function () {
 		this.$el.html(this.template(this.model.toJSON()));

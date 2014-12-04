@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <title>Backbone Testing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <!-- Distribution libraries -->
+    <!-- Templates -->
+    <script type="text/template" id="beerItemTemplate">
+        <div class="beer-cell">
+            <div class="cell-header">
+                <%=title%>
+            </div>
+            <div class="desc">
+                <%=text%>
+            </div>
+            <p>
+                <img src="./img/<%=pic%>">
+            </p>
+        </div>
+    </script>    <!-- Distribution libraries -->
     <script src="../bower_components/underscore/underscore.js"></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/backbone/backbone.js"></script>
@@ -12,6 +25,7 @@
     <script src="../src/js/namespace.js"></script>
     <script src="../src/js/model/BeerExpertModel.js"></script>
     <script src="../src/js/collection/BeerExpertCollection.js"></script>
+    <script src="../src/js/view/BeerExpertItemview.js"></script>
     <!-- DevDependencies for testing -->
     <link rel="shortcut icon" type="image/png" href="../bower_components/jasmine/images/jasmine_favicon.png">
     <link rel="stylesheet" href="../bower_components/jasmine/lib/jasmine-core/jasmine.css"/>
@@ -21,6 +35,7 @@
 
     <script src="spec/beerExpertModel.spec.js"></script>
     <script src="spec/beerExpertCollection.spec.js"></script>
+    <script src="spec/beerExpertItemview.spec.js"></script>
 </head>
 <body>
 </body>

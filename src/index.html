@@ -13,7 +13,6 @@
     <script src="../bower_components/backbone/backbone.js"></script>
     <!-- Application modules -->
     <script type="text/template" id="beerItemTemplate">
-        <div class="beer-cell">
             <div class="cell-header">
                 <%=title%>
             </div>
@@ -23,7 +22,6 @@
             <p>
                 <img src="./img/<%=pic%>">
             </p>
-        </div>
     </script>
 </head>
 <body>
@@ -32,74 +30,8 @@
     <img src="./img/banner.png" class="banner">
 </header>
 <main>
-    <div id="beer-test"></div>
     <section class="beer-table">
-        <div class="beer-row">
-            <div class="beer-cell">
-                <div class="cell-header">
-                    British Stout
-                </div>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                </div>
-                <p>
-                    <img src="./img/beer1.jpg">
-                </p>
-            </div>
 
-            <div class="beer-cell">
-                <div class="cell-header">
-                    Dead Man's Ale
-                </div>
-                <div class="desc">
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                    dolore eu feugiat nulla facilisis at vero eros
-                </div>
-                <p>
-                    <img src="./img/beer3.jpg">
-                </p>
-            </div>
-        </div>
-        <div class="beer-row">
-            <div class="beer-cell">
-                <div class="cell-header">
-                    Monster Brew
-                </div>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                </div>
-                <p>
-                    <img src="./img/beer4.jpg">
-                </p>
-            </div>
-            <div class="beer-cell">
-                <div class="cell-header">
-                    Slacker's Delight
-                </div>
-                <div class="desc">
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.
-                </div>
-                <p>
-                    <img src="./img/beer5.jpg">
-                </p>
-            </div>
-
-            <div class="beer-cell">
-                <div class="cell-header">
-                    Goose Punks
-                </div>
-                <div class="desc">
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                    dolore eu feugiat nulla facilisis at vero eros
-                </div>
-                <p>
-                    <img src="./img/beer6.jpg">
-                </p>
-            </div>
-        </div>
     </section>
 </main>
 <footer>&copyCopyright 2014, Stephan Goemans</footer>
@@ -107,6 +39,7 @@
 <script src="../src/js/model/BeerExpertModel.js"></script>
 <script src="../src/js/collection/BeerExpertCollection.js"></script>
 <script src="../src/js/view/BeerExpertItemview.js"></script>
+<script src="../src/js/view/BeerExpertListview.js"></script>
 <script src="../src/js/app.js"></script>
 </body>
 </html>

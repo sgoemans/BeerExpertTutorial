@@ -64,12 +64,10 @@ step by the use of CSS3.
 body {
   background-color: antiquewhite;
 }
-
 .banner {
   max-width: 100%;
   height: auto;
 }
-
 .beer-table {
   border-spacing: 10px;
   display: table;
@@ -88,11 +86,9 @@ body {
  .cell-header {
    font: bold italic 24px/1.8em "Bookman", Georgia, "Times New Roman", serif;
  }
-
 .beer-row {
   display: table-row;
 }
-
 .beer-cell {
   display: table-cell;
 }

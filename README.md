@@ -98,5 +98,23 @@ body {
 }
 ```
 
-#####6) Open the index.html file in a browser
+#####6) Compile the beer-styles.scss file
+
+For this to accomplish, you must have a sass compiler installed on your workstation. Download the Ruby rev. 193
+installer from http://rubyinstaller.org/downloads/. After you installed this package, make sure its bin directory
+is included in your path environment variable. Next download and install the sass compiler by executing the Ruby
+utility gem:
+
+  gem install sass
+
+This will install Sass and any dependencies for you. It never hurts to double-check. In your terminal application
+you can type:
+
+  sass -v
+
+In WebStorm, you must activate a File Watcher, which looks out for modifications to .sass files to automatically
+compile the file to a css file. You'll need to configure the File Watcher settings to define the location the created
+css file has to go.
+
+#####7) Open the index.html file in a browser
 

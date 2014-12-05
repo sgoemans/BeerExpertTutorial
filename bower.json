@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "jasmine": "*",
-    "jasmine2-junit": "*"
+    "jasmine2-junit": "*",
+    "sinon-browser-only": "~1.12.1"
   }
 }

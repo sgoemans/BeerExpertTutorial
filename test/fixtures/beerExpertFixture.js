@@ -1,4 +1,4 @@
-app.data = [
+app.beerExpertFixture = [
 	{
 		title: "Pale Ale",
 		text: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata"
@@ -36,6 +36,3 @@ app.data = [
 		pic: "beer6.jpg"
 	}
 ];
-app.beerExpertCollection = new App.Collections.BeerExpertCollection( app.data );
-app.beerExpertListview = new App.Views.BeerExpertListview({ collection: app.beerExpertCollection });
-app.beerExpertListview.render();

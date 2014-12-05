@@ -6,37 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!-- Templates -->
     <script type="text/template" id="beerItemTemplate">
-        <div class="beer-cell">
-            <div class="cell-header">
-                <%=title%>
-            </div>
-            <div class="desc">
-                <%=text%>
-            </div>
-            <p>
-                <img src="./img/<%=pic%>">
-            </p>
+        <div class="cell-header">
+            <%=title%>
         </div>
-    </script>    <!-- Distribution libraries -->
-    <script src="../bower_components/underscore/underscore.js"></script>
+        <div class="desc">
+            <%=text%>
+        </div>
+        <p>
+            <img src="../src/img/<%=pic%>">
+        </p>
+    </script>
+    <style rel="stylesheet">
+        .inv {
+            display: none;
+        }
+    </style>
+     <!-- Distribution libraries -->
+    <script src = "../bower_components/underscore/underscore.js" ></script>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script src="../bower_components/backbone/backbone.js"></script>
+
     <!-- Application modules -->
     <script src="../src/js/namespace.js"></script>
     <script src="../src/js/model/BeerExpertModel.js"></script>
     <script src="../src/js/collection/BeerExpertCollection.js"></script>
     <script src="../src/js/view/BeerExpertItemview.js"></script>
+    <script src="../src/js/view/BeerExpertListview.js"></script>
+
     <!-- DevDependencies for testing -->
     <link rel="shortcut icon" type="image/png" href="../bower_components/jasmine/images/jasmine_favicon.png">
     <link rel="stylesheet" href="../bower_components/jasmine/lib/jasmine-core/jasmine.css"/>
     <script src="../bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
     <script src="../bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
     <script src="../bower_components/jasmine/lib/jasmine-core/boot.js"></script>
+    <script src="../bower_components/sinon-browser-only/sinon.js"></script>
 
-    <script src="spec/beerExpertModel.spec.js"></script>
-    <script src="spec/beerExpertCollection.spec.js"></script>
-    <script src="spec/beerExpertItemview.spec.js"></script>
+    <!-- Unit testing modules -->
+    <script src="fixtures/beerExpertFixture.js"></script>
+    <script src="specs/beerExpertModel.spec.js"></script>
+    <script src="specs/beerExpertCollection.spec.js"></script>
+    <script src="specs/beerExpertItemview.spec.js"></script>
+    <script src="specs/beerExpertListview.spec.js"></script>
 </head>
 <body>
+<div id="beer-table" class="inv"></div>
 </body>
 </html>

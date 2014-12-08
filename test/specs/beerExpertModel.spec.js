@@ -8,7 +8,10 @@ describe("BeerExpertModel", function () {
 		});
 
 	});
-	it("exists with default attributes", function () {
+	it("should have default title value", function () {
+		expect(new App.Models.BeerExpertModel().get("title")).toEqual("Title");
+	});
+	it("exists with new attributes", function () {
 		expect(this.beerExpertModel.get("title")).toEqual("Pale Ale");
 	});
 });

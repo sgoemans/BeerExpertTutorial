@@ -14,10 +14,10 @@ must be installed by using the node.js install manager 'npm'.
 #####2) Create a 'package.json' file
 Node/npm requires a project specific configuration file called 'package.json'. You can create a minimal version by
 entering 'npm init' in the Webstorm's project terminal windows. After that, you can either immediately add each plugin
-manually by entering the corresponding 'npm install <plugin-name>'  or you type in the plugin name into the
+manually by entering the corresponding 'npm install <plugin-name> --save-dev' or you type in the plugin name into the
 'package.json' file and run 'npm install' afterwards.
 
-See the package.json for this project:
+See the package.json for this project's branch:
 
 ```
 {

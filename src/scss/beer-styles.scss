@@ -1,35 +1,10 @@
+$background-color: antiquewhite;
+
 body {
-  background-color: antiquewhite;
+  background-color: $background-color;
 }
 
 .banner {
   max-width: 100%;
   height: auto;
-}
-
-.beer-table {
-  border-spacing: 10px;
-  display: table;
-}
-// Font properties:
-//    font-weight: bold;
-//    font-style: italic;
-//    font-variant: small-caps;
-//    font-size: 1em;
-//    line-height: 1.5em;
-//    font-family: verdana,sans-serif
-//
-// CSS shorthand property:
-//    font: bold italic small-caps 1em/1.5em verdana,sans-serif
-//
- .cell-header {
-   font: bold italic 24px/1.8em "Bookman", Georgia, "Times New Roman", serif;
- }
-
-.beer-row {
-  display: table-row;
-}
-
-.beer-cell-left, .beer-cell-middle, .beer-cell-right {
-  display: table-cell;
 }

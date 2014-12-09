@@ -4,18 +4,3 @@ body {
 .banner {
   max-width: 100%;
   height: auto; }
-
-.beer-table {
-  border-spacing: 10px;
-  display: table; }
-
-.cell-header {
-  font: bold italic 24px/1.8em "Bookman", Georgia, "Times New Roman", serif; }
-
-.beer-row {
-  display: table-row; }
-
-.beer-cell-left, .beer-cell-middle, .beer-cell-right {
-  display: table-cell; }
-
-/*# sourceMappingURL=beer-styles.css.map */

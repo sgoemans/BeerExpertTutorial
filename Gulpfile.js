@@ -11,9 +11,7 @@ var minifyHtml = require("gulp-minify-html");
 gulp.task("sass", function() {
 	return gulp.src("src/scss/*.scss")
 		.pipe(sass())
-		.pipe(minifyCss())
-		.pipe(concat("all.min.css"))
-		.pipe(gulp.dest("dist"));
+		.pipe(gulp.dest("src/scss"));
 });
 
 gulp.task("minifyHtml", function() {
@@ -42,4 +40,4 @@ gulp.task("copyImg", function() {
 		.pipe(gulp.dest("dist"));
 });
 
-gulp.task("default", ["copyImg", "usemin"]);
+gulp.task("default", ["copyImg", "sass", "usemin"]);

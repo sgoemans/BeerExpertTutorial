@@ -32,10 +32,12 @@ gulp.task("usemin", function() {
 		.pipe(gulp.dest('dist/'));
 });
 
+/*
 gulp.copy = function(src, dest){
 	return gulp.src(src, {base:"."})
 		.pipe(gulp.dest(dest));
 };
+*/
 
 gulp.task("copyImg", function() {
 	return gulp.src("src/img/**/*", {base:"src"})

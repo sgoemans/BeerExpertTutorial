@@ -1,7 +1,7 @@
 BeerExpertTutorial (Jasmine branch)
 ==================
 
-###Unit tests using Jasmine, automated by Gulp
+###Unit tests using Jasmine, Sinon, and PhantomJs, automated by Gulp
 Goal: Facilitate unit testing with Jasmine & Sinon. Create a Gulp task for running the tests.
 
 #####1) Prerequisites:
@@ -103,5 +103,20 @@ phantom in a child process.
 
 Many node modules which somehow depend on Phantomjs being installed on your workstation provide a convenient npm
 installation wrapper. So, for example, if you specify gulp-jasmine2-phantomjs in package.json, PhantomJs will
-automatically be installed because as a dependency of it (open
+automatically be installed as a dependency of it (see
 node_modules/gulp-jasmine2-phantomjs/node_modules/phantomjs/lib/phantom/phantomjs.exe).
+
+#####7) What can we do without the SpecRunner.html ?
+
+Well, not much. The SpecRunner.html collects all references to source javascript files , app modules, testing framework,
+and unit tests alike. Without the SpecRunner, who is going to tell PhantomJs which app files and which spec files to
+load. Who integrates Jasmine and Sinon in all this?
+
+PhantomJS provides a working jasmine runner example – all we have to do is download it and use it.
+Once we got it, all we have to do is run the following command:
+```
+                        phantomjs /path/to/run-jasmine.js http://localhost/js/test/unit/
+```
+Obviously, this is not the complete picture. From the URL we recognize that we need access to the spec files through
+a web server service. And where do the app files come from? In summary, this is a mediocre placeholder for something
+more elaborate. See coming KARMA branch's README.md.

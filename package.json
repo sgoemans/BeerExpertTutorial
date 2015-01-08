@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.html",
   "author": "Stephan Goemans <stephan.goemans@gmail.com>",
-  "description": "A sample HTML5 / CSS creation workflow",
+  "description": "A sample HTML5 / CSS3 creation workflow",
   "repository": {
     "type": "git",
     "url": "https://github.com/sgoemans/BeerExpertTutorial.git"
@@ -12,7 +12,10 @@
     "HTML5",
     "CSS3",
     "usemin",
-    "bower"
+    "bower",
+    "jasmine",
+    "sinon",
+    "phantomjs"
   ],
   "license": "MIT",
   "dependencies": {},
@@ -26,7 +29,6 @@
     "gulp-uglify": "~1.0.1",
     "gulp-sass": "~1.1.0",
     "bower": "~1.3.12",
-    "phantomjs": "~1.9.12",
     "gulp-jasmine2-phantomjs": "~0.2.0",
     "gulp-clean": "~0.3.1",
     "gulp-util": "~3.0.1"

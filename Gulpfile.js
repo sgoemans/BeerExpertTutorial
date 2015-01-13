@@ -14,9 +14,8 @@ var jasminePhantomJs = require('gulp-jasmine2-phantomjs');
 gulp.task("sass", function() {
 	return gulp.src("src/scss/*.scss")
 		.pipe(sass())
-		.pipe(minifyCss())
-		.pipe(concat("all.min.css"))
-		.pipe(gulp.dest("dist"));
+		.pipe(concat("beer-styles.css"))
+		.pipe(gulp.dest("src/scss"));
 });
 
 gulp.task("minifyHtml", function() {

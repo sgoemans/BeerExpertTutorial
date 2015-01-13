@@ -5,7 +5,7 @@ body {
   max-width: 100%;
   height: auto; }
 
-beer-table {
+#beer-table {
   border-spacing: 10px;
   display: table; }
 
@@ -17,5 +17,3 @@ beer-table {
 
 .beer-cell {
   display: table-cell; }
-
-/*# sourceMappingURL=beer-styles.css.map */

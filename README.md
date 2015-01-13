@@ -19,8 +19,9 @@ the corresponding Jasmine bower config entries are put into the devDependencies 
     "sinon-browser-only": "~1.12.1"
   }
 ```
-Jasmine is also available if you want to test pure node related javascript code. For node applications, there is no
-SpecRunner.html, so you need to install an npm module.
+Jasmine is also available if you want to test pure node related javascript code (no browser). In node applications
+there is no SpecRunner.html, so you need to install a Jasmine npm module like https://github.com/jasmine/jasmine-npm or
+https://github.com/mhevery/jasmine-node.
 
 #####3) SpecRunner.html
 The SpecRunner.html file in the project's test folder is used for unit testing. The name doesn't matter, it could also

@@ -1,3 +1,4 @@
+/** @class */
 App.Views.BeerExpertItemview = Backbone.View.extend({
 	tagName: 'div',
 	className: 'beer-cell',

@@ -10,13 +10,14 @@ var usemin = require('gulp-usemin');
 var minifyCss = require("gulp-minify-css");
 var minifyHtml = require("gulp-minify-html");
 var jasminePhantomJs = require('gulp-jasmine2-phantomjs');
+var jsdoc = require("gulp-jsdoc");
 
 gulp.task("sass", function() {
 	return gulp.src("src/scss/*.scss")
 		.pipe(sass())
 		.pipe(minifyCss())
-		.pipe(concat("all.min.css"))
-		.pipe(gulp.dest("dist"));
+		.pipe(concat("beer-styles.css"))
+		.pipe(gulp.dest("src/scss"));
 });
 
 gulp.task("minifyHtml", function() {
@@ -56,4 +57,15 @@ gulp.task("test", function() {
 	return gulp.src("test/**/*.html")
 		.pipe(jasminePhantomJs());
 });
+
+gulp.task("jsdoc", function() {
+	return gulp.src("./src/**/*.js")
+		.pipe(jsdoc.parser({
+			name: 'BeerExpertDoc',
+			version: '1.0.0',
+			description: "A beer drinker's final app"
+		}, 'Beer'))
+		.pipe(jsdoc.generator('./docs'))
+});
+
 gulp.task("default", ["clean", "copyImg", "usemin"]);

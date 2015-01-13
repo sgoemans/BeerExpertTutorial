@@ -1,6 +1,7 @@
 dist/
 bower_components/
 node_modules/
+docs/
 
 # Created by .gitignore support plugin (hsz.mobi)
 ### JetBrains template

@@ -1,3 +1,4 @@
+/** @class */
 App.Models.BeerExpertModel = Backbone.Model.extend({
 	validate: function () {
 

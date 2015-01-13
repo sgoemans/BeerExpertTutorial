@@ -1,3 +1,4 @@
+/** @class */
 App.Views.BeerExpertListview = Backbone.View.extend({
 	el: '#beer-table',
 	initialize: function () {

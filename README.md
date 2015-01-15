@@ -25,8 +25,8 @@ https://github.com/mhevery/jasmine-node.
 
 #####3) SpecRunner.html
 The SpecRunner.html file in the project's test folder is used for unit testing. The name doesn't matter, it could also
-be index.html. SpecRunner.html is quite similar to your app's index.html file, but it also includes several <script>
-tags for Jasmine / Sinon and <script> tags for the unit test files (specs). See the part which is added to the
+be index.html. SpecRunner.html is quite similar to your app's index.html file, but it also includes several script
+tags for Jasmine / Sinon and script tags for the unit test files (specs). See the part which is added to the
 BeerExpertTutorials index.html file and saved to SpecRunner.html in the test folder of the BeerExpert Tutorial:
 ```
 <!-- DevDependencies for testing -->

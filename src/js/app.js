@@ -1,3 +1,10 @@
+/**
+ * @file The BeerExpertTutorial's start module. It creates an array with test data which is used to
+ * intitially fill the beerExpertCollection.
+ * @see {@link App.Views.BeerExpertListview} line 9
+ * @author Stephan Goemans
+ */
+/** @constant */
 app.data = [
 	{
 		title: "Pale Ale",
@@ -36,6 +43,7 @@ app.data = [
 		pic: "beer6.jpg"
 	}
 ];
+/** @object */
 app.beerExpertCollection = new App.Collections.BeerExpertCollection( app.data );
 app.beerExpertListview = new App.Views.BeerExpertListview({ collection: app.beerExpertCollection });
 app.beerExpertListview.render();

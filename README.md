@@ -27,21 +27,21 @@ https://github.com/mhevery/jasmine-node.
 The SpecRunner.html file in the project's test folder is used for unit testing. The name doesn't matter, it could also
 be index.html. SpecRunner.html is quite similar to your app's index.html file, but it also includes several <script>
 tags for Jasmine / Sinon and <script> tags for the unit test files (specs). See the part which is added to the
-BeerExpertTutorial's index.html file and saved to SpecRunner.html in the test folder of the BeerExpert Tutorial:
+BeerExpertTutorials index.html file and saved to SpecRunner.html in the test folder of the BeerExpert Tutorial:
 ```
-    <!-- DevDependencies for testing -->
-    <link rel="shortcut icon" type="image/png" href="../bower_components/jasmine/images/jasmine_favicon.png">
-    <link rel="stylesheet" href="../bower_components/jasmine/lib/jasmine-core/jasmine.css"/>
-    <script src="../bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
-    <script src="../bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
-    <script src="../bower_components/jasmine/lib/jasmine-core/boot.js"></script>
-    <script src="../bower_components/sinon-browser-only/sinon.js"></script>
-    <!-- Unit testing modules -->
-    <script src="fixtures/beerExpertFixture.js"></script>
-    <script src="specs/beerExpertModel.spec.js"></script>
-    <script src="specs/beerExpertCollection.spec.js"></script>
-    <script src="specs/beerExpertItemview.spec.js"></script>
-    <script src="specs/beerExpertListview.spec.js"></script>
+<!-- DevDependencies for testing -->
+<link rel="shortcut icon" type="image/png" href="../bower_components/jasmine/images/jasmine_favicon.png">
+<link rel="stylesheet" href="../bower_components/jasmine/lib/jasmine-core/jasmine.css"/>
+<script src="../bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
+<script src="../bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+<script src="../bower_components/jasmine/lib/jasmine-core/boot.js"></script>
+<script src="../bower_components/sinon-browser-only/sinon.js"></script>
+<!-- Unit testing modules -->
+<script src="fixtures/beerExpertFixture.js"></script>
+<script src="specs/beerExpertModel.spec.js"></script>
+<script src="specs/beerExpertCollection.spec.js"></script>
+<script src="specs/beerExpertItemview.spec.js"></script>
+<script src="specs/beerExpertListview.spec.js"></script>
 ```
 
 #####4) jasmine2-junit
@@ -54,14 +54,14 @@ only works when running specs with PhantomJS.
 In order to setup jasmine2-junit, you need to add the following scripts to your spec runner html file:
 
 ```
-    <!-- DevDependencies for testing -->
-    <link rel="shortcut icon" type="image/png" href="../bower_components/jasmine/images/jasmine_favicon.png">
-    <link rel="stylesheet" href="../bower_components/jasmine/lib/jasmine-core/jasmine.css"/>
-    <script src="../bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
-    <script src="../bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
-    <script src="../bower_components/jasmine2-junit/jasmine2-junit.js"></script>
-    <!-- This boot.js is a modified version of Jasmine's default boot.js! -->
-    <script src="../bower_components/jasmine2-junit/boot.js"></script>
+<!-- DevDependencies for testing -->
+<link rel="shortcut icon" type="image/png" href="../bower_components/jasmine/images/jasmine_favicon.png">
+<link rel="stylesheet" href="../bower_components/jasmine/lib/jasmine-core/jasmine.css"/>
+<script src="../bower_components/jasmine/lib/jasmine-core/jasmine.js"></script>
+<script src="../bower_components/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+<script src="../bower_components/jasmine2-junit/jasmine2-junit.js"></script>
+<!-- This boot.js is a modified version of Jasmine's default boot.js! -->
+<script src="../bower_components/jasmine2-junit/boot.js"></script>
 ```
 
 #####5) sinon-browser-only
@@ -92,12 +92,12 @@ There seem to be two competing modules available:
 
 https://www.npmjs.com/package/sinon-browser-only
 ```
-    "sinon-browser-only": "~1.12.1"
+"sinon-browser-only": "~1.12.1"
 ```
 
 or https://github.com/blittle/sinon.js (which hasn't seen updates for quite some time)
 ```
-    "sinonjs": "~1.10.2"
+"sinonjs": "~1.10.2"
 ```
 
 Only a node module is able to use the node Sinon module, like Grunt, Gulp, self-written modules, and of course
@@ -139,7 +139,7 @@ load. Who integrates Jasmine and Sinon in all this?
 PhantomJS provides a working jasmine runner example – all we have to do is download it and use it.
 Once we got it, all we have to do is run the following command:
 ```
-                        phantomjs /path/to/run-jasmine.js http://localhost/js/test/unit/
+phantomjs /path/to/run-jasmine.js http://localhost/js/test/unit/
 ```
 Obviously, this is not the complete picture. From the URL we recognize that we need access to the spec files through
 a web server service (node?). And where do the app files come from? In summary, this is a mediocre placeholder for something

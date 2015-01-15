@@ -8,20 +8,18 @@
     <link href="scss/beer-styles.css" rel="stylesheet"/>
     <!-- endbuild -->
     <!-- Distribution libraries -->
-    <script src="../bower_components/underscore/underscore.js"></script>
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/backbone/backbone.js"></script>
+    <script data-main="js/main.js" src="../bower_components/requirejs/require.js"></script>
     <!-- Application modules -->
     <script type="text/template" id="beerItemTemplate">
-            <div class="cell-header">
-                <%=title%>
-            </div>
-            <div class="desc">
-                <%=text%>
-            </div>
-            <p>
-                <img src="./img/<%=pic%>">
-            </p>
+        <div class="cell-header">
+            <%=title%>
+        </div>
+        <div class="desc">
+            <%=text%>
+        </div>
+        <p>
+            <img src="./img/<%=pic%>">
+        </p>
     </script>
 </head>
 <body>
@@ -35,11 +33,5 @@
     </section>
 </main>
 <footer>&copyCopyright 2014, Stephan Goemans</footer>
-<script src="../src/js/namespace.js"></script>
-<script src="../src/js/model/BeerExpertModel.js"></script>
-<script src="../src/js/collection/BeerExpertCollection.js"></script>
-<script src="../src/js/view/BeerExpertItemview.js"></script>
-<script src="../src/js/view/BeerExpertListview.js"></script>
-<script src="../src/js/app.js"></script>
 </body>
 </html>

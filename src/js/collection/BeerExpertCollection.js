@@ -1,6 +1,8 @@
-/** @class */
-App.Collections.BeerExpertCollection = Backbone.Collection.extend({
-	model: App.Models.BeerExpertModel,
-	url: '/beers'
+define(["backbone", "beerexpertmodel"], function(Backbone, BeerExpertModel) {
+	var BeerExpertCollection = Backbone.Collection.extend({
+		model: BeerExpertModel,
+		url: '/beers'
+	});
+	return BeerExpertCollection;
 });
 

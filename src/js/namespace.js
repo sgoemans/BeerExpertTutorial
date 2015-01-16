@@ -1,2 +1,2 @@
-/* Creating a namespace is not necessary when using RequireJS
+/* Creating a namespace is not necessary when using RequireJS */
 

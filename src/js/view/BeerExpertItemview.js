@@ -1,5 +1,13 @@
-define(["jquery", "underscore", "backbone"], function($, _, Backbone) {
-	var BeerExpertItemview = Backbone.View.extend({
+/**
+ * @exports module:BeerExpertItemview
+  */
+define('BeerExpertItemView', ["jquery", "underscore", "backbone"], function($, _, Backbone) {
+	/**
+	 * @name BeerExpertItemview
+	 * @constructor
+	 * @augments Backbone.View
+	 */
+	return Backbone.View.extend({
 		tagName: 'div',
 		className: 'beer-cell',
 		template: _.template($('#beerItemTemplate').html()),
@@ -8,5 +16,4 @@ define(["jquery", "underscore", "backbone"], function($, _, Backbone) {
 			return this; // enable chained calls
 		}
 	});
-	return BeerExpertItemview;
 });

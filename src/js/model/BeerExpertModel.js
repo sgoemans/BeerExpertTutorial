@@ -1,5 +1,13 @@
+/**
+ * @exports module:BeerExpertModel
+ */
 define(["backbone"], function(Backbone) {
-	var BeerExpertModel = Backbone.Model.extend({
+	/**
+	 * @name BeerExpertModel
+	 * @constructor
+	 * @augments Backbone.Model
+	 */
+	return Backbone.Model.extend({
 		validate: function () {
 
 		},
@@ -10,5 +18,4 @@ define(["backbone"], function(Backbone) {
 
 		}
 	});
-	return BeerExpertModel;
 });

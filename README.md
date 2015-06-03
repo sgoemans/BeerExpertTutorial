@@ -1,8 +1,8 @@
 BeerExpertTutorial
 ==================
 
-###Let's begin with some simple HTML5 and CSS3
-Goal: Develop a simple webpage for beer experts to look at a selection of beer labels, arranged in a table
+###Let's begin the tutorial's 1st chapter with some simple HTML5 and CSS3.
+Goal: Develop a simple webpage for beer experts to look at a selection of beer labels, arranged in a table.
 
 #####1) Prerequisites:
 
@@ -21,8 +21,8 @@ none
 
 #####4) Create an index.html file
 
-As a starting point, the index.html file will contain a static webpage. Layout will be added in the next
-step by the use of CSS3.
+As a starting point, the index.html file will contain a static webpage. Layout using CSS3 will be added in the next
+step.
 
 ```
 <!DOCTYPE html>
@@ -96,7 +96,7 @@ body {
 
 #####6) Compile the beer-styles.scss file
 
-For this to accomplish, you must have a sass compiler installed on your workstation. Download the Ruby rev. 193
+For this to work, you must have a sass compiler installed on your workstation. Download the Ruby rev. 193
 installer from http://rubyinstaller.org/downloads/. After you installed this package, make sure its bin directory
 is included in your path environment variable. Next download and install the sass compiler by executing the Ruby
 utility gem:

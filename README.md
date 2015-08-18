@@ -59,7 +59,7 @@ belong to application. It is used for development purposes only.
 
 Because running build tasks need nodejs as the execution environment, the plugins are stored in separate javascript files
 which need to tbe 'required' in the build tasks code (there is no browserinvolved in this, therefore no &lt;script&gt; or
-<link> tags). This is accomplished by using nodejs own 'require' function at the beginning of the Gulpfile.js:
+&lt;link&gt; tags). This is accomplished by using nodejs own 'require' function at the beginning of the Gulpfile.js:
 
 ```
 var gulp = require("gulp");

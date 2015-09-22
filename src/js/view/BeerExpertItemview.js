@@ -1,7 +1,7 @@
 /**
  * @exports module:BeerExpertItemview
   */
-define('BeerExpertItemView', ["jquery", "underscore", "backbone"], function($, _, Backbone) {
+define(["jquery", "underscore", "backbone"], function($, _, Backbone) {
 	/**
 	 * @name BeerExpertItemview
 	 * @constructor
